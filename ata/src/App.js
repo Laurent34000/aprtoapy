@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-          Ton application AtA est en cours de développement :)
+          En cours de développement
 
       </header>
 
