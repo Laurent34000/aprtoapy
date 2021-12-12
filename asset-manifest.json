@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aprtoapy/static/css/main.c6dd528a.chunk.css",
+    "main.js": "/aprtoapy/static/js/main.ed5dd3d8.chunk.js",
+    "main.js.map": "/aprtoapy/static/js/main.ed5dd3d8.chunk.js.map",
+    "runtime-main.js": "/aprtoapy/static/js/runtime-main.97935db7.js",
+    "runtime-main.js.map": "/aprtoapy/static/js/runtime-main.97935db7.js.map",
+    "static/js/2.d81f00ba.chunk.js": "/aprtoapy/static/js/2.d81f00ba.chunk.js",
+    "static/js/2.d81f00ba.chunk.js.map": "/aprtoapy/static/js/2.d81f00ba.chunk.js.map",
+    "static/js/3.086108db.chunk.js": "/aprtoapy/static/js/3.086108db.chunk.js",
+    "static/js/3.086108db.chunk.js.map": "/aprtoapy/static/js/3.086108db.chunk.js.map",
+    "index.html": "/aprtoapy/index.html",
+    "static/css/main.c6dd528a.chunk.css.map": "/aprtoapy/static/css/main.c6dd528a.chunk.css.map",
+    "static/js/2.d81f00ba.chunk.js.LICENSE.txt": "/aprtoapy/static/js/2.d81f00ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97935db7.js",
+    "static/js/2.d81f00ba.chunk.js",
+    "static/css/main.c6dd528a.chunk.css",
+    "static/js/main.ed5dd3d8.chunk.js"
+  ]
+}
