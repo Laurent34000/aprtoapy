@@ -14,26 +14,29 @@
 }
 
 .App-header {
-  background-color: #7e7946;
+  background-color: #f9f9f8;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #161515;
+  text-align: left;
 }
 
 .App-main {
-  background-color: #7e7946;
+  background-color: #f9f9f8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:black;
 }
+
+
 
 
 .App-link {

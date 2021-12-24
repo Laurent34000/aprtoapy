@@ -37,28 +37,29 @@ class AprToApy extends Component {
     
     render() {
             return <div>
-                <h1>Apr to Apy</h1>
+                <h1>APR to APY</h1>
                 
-                <form onSubmit={this.exe}> 
-                <div>
-                    <input type="text" value={this.state.yourapr} onChange={this.handleApr}></input> % APR <p>compounding</p>
+                <form class="row align-items-center" style={{width: '100%', justifyContent: 'center'}} onSubmit={this.exe}> 
+                <div style={{display: 'contents'}}>
+                    <input class="form-control" type="text" value={this.state.yourapr} onChange={this.handleApr} style={{width: '200px',}}/><span style={{margin: '25px'}}>% APR compounding</span> 
                 </div>
-                <div> 
-                    <select value={this.state.value} onChange={this.handlePeriod}>
+                <div style={{display: 'contents'}}> 
+                    <select class="form-select" value={this.state.value} onChange={this.handlePeriod} style={{width: '200px',}}>
                         <option value=""></option>
                         <option value="1">annualy</option>
                         <option value="2">semester</option>
                         <option value="12">monthly</option>
                         <option value="52">weekly</option>
                         <option value="365">daily</option>
-                </select> is
+                </select> <span style={{margin: '25px'}}>is</span>
                     
                 </div>
-                <div>
-                    <button type="submit">Enter</button>
+                <div style={{display: 'contents'}}>
+                    <button class="btn btn-secondary" style={{padding: '10px'}} type="submit">Calculate</button>
                 </div> 
-            {isNaN (Number(this.state.total).toFixed(2)) ? ("0.00") : (Number(this.state.total).toFixed(2))} % Apy
-
+                    <p>
+            {isNaN (Number(this.state.total).toFixed(2)) ? ("0.00") : (Number(this.state.total).toFixed(2))} % APY
+                     </p>
                 </form> 
 
                 </div>

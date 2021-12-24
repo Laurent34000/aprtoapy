@@ -39,14 +39,14 @@ class ApyToApr extends Component {
     return  (
     
       <div>
-        <h1> Apy to Apr</h1>
-        <form onSubmit={this.exe}>
-              <div>
-        <input type='text' value= {this.state.yourapy} onChange={this.handleApy}/> % APY <p>compounding</p>
+        <h1 style={{paddingTop: '60px'}}> APY to APR</h1>
+        <form class="row align-items-center" onSubmit={this.exe} style={{width: '100%', justifyContent: 'center'}}>
+              <div style={{display: 'contents'}}>
+        <input class="form-control" type='text' value= {this.state.yourapy} onChange={this.handleApy} style={{width: '200px'}}/><span style={{margin: '25px'}}>% APY compounding</span>
               </div>
 
-              <div>
-        <select value={this.state.period} onChange={this.handlePeriod}>
+              <div style={{display: 'contents'}}>
+        <select class="form-select"  value={this.state.period} onChange={this.handlePeriod} style={{width: '200px',}}>
               <option value=""></option>
               <option value= "1">annual</option>
               <option value="2">semestre</option>
@@ -54,16 +54,17 @@ class ApyToApr extends Component {
               <option value="52">weekly</option>
               <option value="365">daily</option>
 
-        </select> is
+        </select><span style={{margin: '25px'}}>is</span>
               </div>
 
-              <div>
-          <button type="submit">Enter</button>
+              <div style={{display: 'contents',}}>
+          <button class="btn btn-secondary" style={{padding: '10px'}}type="submit">Calculate</button>
               </div>
-              </form>
-            
-             {isNaN(Number(this.state.total).toFixed(2)) ? ("0.00") : ((Number(this.state.total).toFixed(2)))} % APR
-            
+            <p>
+            {isNaN(Number(this.state.total).toFixed(2)) ? ("0.00") : ((Number(this.state.total).toFixed(2)))} % APR
+            </p>
+          
+             </form>
         </div>)}
 
     }
