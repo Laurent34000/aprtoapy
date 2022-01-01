@@ -33,11 +33,8 @@
   align-items: stretch;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color:black;
+  color: black;
 }
-
-
-
 
 .App-link {
   color: #61dafb;
