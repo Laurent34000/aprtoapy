@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aprtoapy/static/css/main.1895edfb.chunk.css",
-    "main.js": "/aprtoapy/static/js/main.5b65af6c.chunk.js",
-    "main.js.map": "/aprtoapy/static/js/main.5b65af6c.chunk.js.map",
+    "main.js": "/aprtoapy/static/js/main.c6669e7e.chunk.js",
+    "main.js.map": "/aprtoapy/static/js/main.c6669e7e.chunk.js.map",
     "runtime-main.js": "/aprtoapy/static/js/runtime-main.34bbba4a.js",
     "runtime-main.js.map": "/aprtoapy/static/js/runtime-main.34bbba4a.js.map",
     "static/css/2.383c0125.chunk.css": "/aprtoapy/static/css/2.383c0125.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.383c0125.chunk.css",
     "static/js/2.85ce7f61.chunk.js",
     "static/css/main.1895edfb.chunk.css",
-    "static/js/main.5b65af6c.chunk.js"
+    "static/js/main.c6669e7e.chunk.js"
   ]
 }
