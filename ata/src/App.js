@@ -1,11 +1,12 @@
 import "./App.css";
 import AprToApy from "./hookscomponents/AprToApy";
 import ApyToApr from "./hookscomponents/ApyToApr";
+import Header from "./Header";
 
 function App() {
   return (
     <div className="App">
-      <header></header>
+      <Header />
 
       <main className="App-main">
         <AprToApy />
