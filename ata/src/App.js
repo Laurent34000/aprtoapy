@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <main className="App-main">
+      <main className="App-main text-center">
         <AprToApy />
         <ApyToApr />
       </main>

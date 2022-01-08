@@ -11,7 +11,7 @@ const AprToApy = () => {
   };
 
   return (
-    <div className="mt-3">
+    <div className="pt-5">
       <h1>APR to APY</h1>
       <div className="d-inline-flex">
         <form className="row align-items-center w-100" onSubmit={handleTotal}>
@@ -45,8 +45,8 @@ const AprToApy = () => {
             % APY
           </p>
         </form>
-      </div>
-    </div>
+        </div>
+            </div>
   );
 };
 
