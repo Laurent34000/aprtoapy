@@ -24,7 +24,7 @@ const ApyToApr = () => {
       <div className="col-sm-2">
           <input
             className="form-control"
-            type="text"
+            type="number"
             value={yourApy}
             onChange={(e) => setYourApy(e.target.value)}
           ></input>

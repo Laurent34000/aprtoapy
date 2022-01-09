@@ -19,7 +19,7 @@ const AprToApy = () => {
       <div className="row form-group justify-content-center" >
         <div className="col-sm-2">
         <input
-            type="text"
+            type="number"
             className="form-control"
             value={yourApr}
             onChange={(e) => setYourApr(e.target.value)}
