@@ -13,22 +13,27 @@ const ApyToApr = () => {
   };
 
   return (
-    <div>
-      <h1 className="pt-5">APY to APR</h1>
+    <div className="container mt-5 col-sm-7">
+      <div className="card">
+      <h1 className="card-header">APY to APR</h1>
+   
 
-      <div className="d-inline-flex">
-        <form className="row align-items-center w-100" onSubmit={handleTotal}>
+      <div className="card-body mt-4">
+        <form  onSubmit={handleTotal}>
+      <div className="row form-group justify-content-center" >
+      <div className="col-sm-2">
           <input
-            className="form-control w-auto"
+            className="form-control"
             type="text"
             value={yourApy}
             onChange={(e) => setYourApy(e.target.value)}
           ></input>
-
-          <span className="w-auto m-5">% APY compounding</span>
-
+          </div>    
+          <span className="w-auto">% APY compounding</span>
+          
+          <div className="col-sm-2">
           <select
-            class="form-select w-auto"
+            className="form-select"
             value={period}
             onChange={(e) => setPeriod(Number(e.target.value))}
           >
@@ -39,20 +44,22 @@ const ApyToApr = () => {
             <option value="52">weekly</option>
             <option value="365">daily</option>
           </select>
-
-          <span className="w-auto m-5">is</span>
-
-          <button class="btn btn-secondary w-auto p-2" type="submit">
+          </div>
+          <span className="col-sm-1">is</span>
+          <div className="col-sm-1"> 
+          <button className="btn btn-secondary w-auto p-2" type="submit">
             Calculate
           </button>
-
-          <p className="pt-2">
+          </div>
+          <p className="m-4">
             {isNaN(Number(total).toFixed(2))
               ? "0.00"
               : Number(total).toFixed(2)}{" "}
             % APR
           </p>
+          </div>
         </form>
+        </div>
       </div>
     </div>
   );
