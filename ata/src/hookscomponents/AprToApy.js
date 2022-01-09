@@ -3,9 +3,11 @@ import React, { useState } from "react";
 const AprToApy = () => {
   const [yourApr, setYourApr] = useState("");
   const [period, setPeriod] = useState("");
-  const [total1, setTotal1] = useState();
+  const [total1, setTotal1] = useState(Number(1));
 
- 
+
+  //((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)
+        
 
   return (
     <div className="container mt-5 col-sm-7">
@@ -40,7 +42,7 @@ const AprToApy = () => {
           </div>
           <span className="col-sm-1">is</span>
           <div className="col-sm-2">
-          <input className="form-control" type="number" value={((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)} onChange={(e)=> setTotal1(e.target.value)}></input>
+          <input className="form-control" type="text" value={total1*((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)} onChange={(e) => setTotal1(e.target.value)}></input> 
           </div>
           % APY
           
