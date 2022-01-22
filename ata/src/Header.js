@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => (
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -19,12 +18,13 @@ const Header = () => (
       <div class="navbar-collapse collapse">
         <div class="mr-auto navbar-nav">
           <a href="/aprtoapy" class="nav-link">
-            <FontAwesomeIcon icon={faHome}/> <span> </span>
+            <FontAwesomeIcon icon={faHome} /> <span> </span>
             Home
           </a>
 
           <a href="https://github.com/Laurent34000/aprtoapy" class="nav-link">
-            <FontAwesomeIcon icon={faGithub} /><span> </span>
+            <FontAwesomeIcon icon={faGithub} />
+            <span> </span>
             About
           </a>
         </div>
