@@ -38,13 +38,13 @@ class AprToApy extends Component {
         <h1>APR to APY</h1>
 
         <form
-          class="row align-items-center"
+          className="row align-items-center"
           style={{ width: "100%", justifyContent: "center" }}
           onSubmit={this.exe}
         >
           <div style={{ display: "contents" }}>
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               value={this.state.yourapr}
               onChange={this.handleApr}
@@ -54,7 +54,7 @@ class AprToApy extends Component {
           </div>
           <div style={{ display: "contents" }}>
             <select
-              class="form-select"
+              className="form-select"
               value={this.state.value}
               onChange={this.handlePeriod}
               style={{ width: "200px" }}
@@ -70,7 +70,7 @@ class AprToApy extends Component {
           </div>
           <div style={{ display: "contents" }}>
             <button
-              class="btn btn-secondary"
+              className="btn btn-secondary"
               style={{ padding: "10px" }}
               type="submit"
             >
