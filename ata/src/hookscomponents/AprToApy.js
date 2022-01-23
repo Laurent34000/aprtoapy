@@ -3,24 +3,10 @@ import React, { useState } from "react";
 const AprToApy = () => {
   const [yourApr, setYourApr] = useState("");
   const [period, setPeriod] = useState("");
-  const [total1, setTotal1] = useState("");
 
 
-const compute = (apr, per) => {
-    setTotal1( ((Math.pow(1 + Number(apr) / 100 / per, per) - 1) * 100).toFixed(2))
-}
+const result = ((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)
 
-const onApr = (value) => {
-
-  setYourApr(value)
-  compute(value, period)
-}
-
-const onPeriod = (value) => {
-
-  setPeriod(value)
-  compute(yourApr, value)
-}
   //((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)
 
   return (
@@ -35,7 +21,7 @@ const onPeriod = (value) => {
                   type="number"
                   className="form-control"
                   value={yourApr}
-                  onChange={(e) => onApr(e.target.value) }
+                  onChange={(e) => setYourApr(e.target.value) }
                 ></input>
               </div>
               <span className="w-auto ">% APR </span>
@@ -44,7 +30,7 @@ const onPeriod = (value) => {
                 <select
                   className="form-select"
                   value={period}
-                  onChange={(e) => onPeriod(Number(e.target.value))}
+                  onChange={(e) => setPeriod(Number(e.target.value))}
                 >
                   <option value=""></option>
                   <option value="1">annualy</option>
@@ -56,12 +42,7 @@ const onPeriod = (value) => {
               </div>
               <span className="col-sm-1">is</span>
               <div className="col-sm-2">
-                <input
-                  className="form-control"
-                  type="text"
-                  value={total1}
-                  onChange={(e) => setTotal1(e.target.value)}
-                ></input>
+                  {result}
               </div>
               % APY
             </div>
