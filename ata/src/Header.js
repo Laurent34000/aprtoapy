@@ -22,7 +22,10 @@ const Header = () => (
             Home
           </a>
 
-          <a href="https://github.com/Laurent34000/aprtoapy" className="nav-link">
+          <a
+            href="https://github.com/Laurent34000/aprtoapy"
+            className="nav-link"
+          >
             <FontAwesomeIcon icon={faGithub} />
             <span> </span>
             About

@@ -3,14 +3,12 @@ import React, { useState } from "react";
 const ApyToApr = () => {
   const [yourApy, setYourApy] = useState("");
   const [period, setPeriod] = useState("");
-  const [total, setTotal] = useState("");
 
-  const handleTotal = (e) => {
-    e.preventDefault();
-    setTotal(
-      (Math.pow(1 + Number(yourApy / 100), 1 / period) - 1) * period * 100
-    );
-  };
+  const result = (
+    (Math.pow(1 + Number(yourApy / 100), 1 / period) - 1) *
+    period *
+    100
+  ).toFixed(2);
 
   return (
     <div className="container mt-5 col-sm-7">
@@ -18,18 +16,18 @@ const ApyToApr = () => {
         <h1 className="card-header">APY to APR</h1>
 
         <div className="card-body mt-4">
-          <form onSubmit={handleTotal}>
+          <form>
             <div className="row form-group justify-content-center">
               <div className="col-sm-2">
                 <input
-                  className="form-control"
                   type="number"
+                  className="form-control"
                   value={yourApy}
                   onChange={(e) => setYourApy(e.target.value)}
                 ></input>
               </div>
-              <span className="w-auto">% APY compounding</span>
-
+              <span className="w-auto">% APY</span>
+              <span className="w-auto ">compounding</span>
               <div className="col-sm-2">
                 <select
                   className="form-select"
@@ -45,17 +43,8 @@ const ApyToApr = () => {
                 </select>
               </div>
               <span className="col-sm-1">is</span>
-              <div className="col-sm-1">
-                <button className="btn btn-secondary w-auto p-2" type="submit">
-                  Calculate
-                </button>
-              </div>
-              <p className="m-4">
-                {isNaN(Number(total).toFixed(2))
-                  ? "0.00"
-                  : Number(total).toFixed(2)}{" "}
-                % APR
-              </p>
+              <div className="col-sm-2">{isNaN(result) ? "0.00" : result}</div>%
+              APR
             </div>
           </form>
         </div>

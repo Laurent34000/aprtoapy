@@ -4,8 +4,10 @@ const AprToApy = () => {
   const [yourApr, setYourApr] = useState("");
   const [period, setPeriod] = useState("");
 
-
-const result = ((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)
+  const result = (
+    (Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) *
+    100
+  ).toFixed(2);
 
   //((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100).toFixed(2)
 
@@ -21,7 +23,7 @@ const result = ((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100
                   type="number"
                   className="form-control"
                   value={yourApr}
-                  onChange={(e) => setYourApr(e.target.value) }
+                  onChange={(e) => setYourApr(e.target.value)}
                 ></input>
               </div>
               <span className="w-auto ">% APR </span>
@@ -41,10 +43,7 @@ const result = ((Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) * 100
                 </select>
               </div>
               <span className="col-sm-1">is</span>
-              <div className="col-sm-2">
-                  {result}
-              </div>
-              % APY
+              <div className="col-sm-2">{result}</div>% APY
             </div>
           </form>
         </div>
