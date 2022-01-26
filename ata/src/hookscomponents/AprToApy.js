@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const AprToApy = () => {
-  const [yourApr, setYourApr] = useState("");
-  const [period, setPeriod] = useState("");
+  const [yourApr, setYourApr] = useState(5);
+  const [period, setPeriod] = useState(1);
 
   const result = (
     (Math.pow(1 + Number(yourApr) / 100 / period, period) - 1) *
@@ -34,7 +34,6 @@ const AprToApy = () => {
                   value={period}
                   onChange={(e) => setPeriod(Number(e.target.value))}
                 >
-                  <option value=""></option>
                   <option value="1">annualy</option>
                   <option value="2">semester</option>
                   <option value="12">monthly</option>

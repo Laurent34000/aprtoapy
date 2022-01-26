@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const ApyToApr = () => {
-  const [yourApy, setYourApy] = useState("");
-  const [period, setPeriod] = useState("");
+  const [yourApy, setYourApy] = useState(5);
+  const [period, setPeriod] = useState(1);
 
   const result = (
     (Math.pow(1 + Number(yourApy / 100), 1 / period) - 1) *
@@ -10,6 +10,7 @@ const ApyToApr = () => {
     100
   ).toFixed(2);
 
+     
   return (
     <div className="container mt-5 col-sm-7">
       <div className="card">
@@ -32,9 +33,8 @@ const ApyToApr = () => {
                 <select
                   className="form-select"
                   value={period}
-                  onChange={(e) => setPeriod(Number(e.target.value))}
+                  onChange={(e) => setPeriod(e.target.value)}
                 >
-                  <option value=""></option>
                   <option value="1">annualy</option>
                   <option value="2">semester</option>
                   <option value="12">monthly</option>
