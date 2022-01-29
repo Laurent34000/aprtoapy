@@ -15,10 +15,10 @@ const AprToApy = () => {
     <div className="container mt-5 col-sm-7">
       <div className="card">
         <h1 className="card-header">APR to APY</h1>
-        <div className="card-body mt-4">
+        <div className="card-body m-4">
           <form>
             <div className="row form-group justify-content-center">
-              <div className="col-sm-2">
+              <div className="col-lg-2 mb-3 mb-lg-0">
                 <input
                   type="number"
                   className="form-control"
@@ -28,7 +28,7 @@ const AprToApy = () => {
               </div>
               <span className="w-auto ">% APR </span>
               <span className="w-auto ">compounding</span>
-              <div className="col-sm-2">
+              <div className="col-lg-2 m-3 m-lg-0">
                 <select
                   className="form-select"
                   value={period}
@@ -41,8 +41,8 @@ const AprToApy = () => {
                   <option value="365">daily</option>
                 </select>
               </div>
-              <span className="col-sm-1">is</span>
-              <div className="col-sm-2">{result}</div>% APY
+              <span className="w-auto">is</span>
+              <div className="w-auto">{result}</div>% APY
             </div>
           </form>
         </div>
