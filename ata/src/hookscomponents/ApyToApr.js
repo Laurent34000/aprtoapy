@@ -19,16 +19,18 @@ const ApyToApr = () => {
         <div className="card-body m-4">
           <form>
             <div className="row form-group justify-content-center">
-              <div className="col-lg-2 mb-3 mb-lg-0">
+              <div className="col-lg-3">
+              <div className="input-group col-lg-2 mb-3 mb-lg-0">
                 <input
                   type="number"
                   className="form-control"
                   value={yourApy}
                   onChange={(e) => setYourApy(e.target.value)}
                 ></input>
+              <span className="input-group-text">% APY</span>
               </div>
-              <span className="w-auto">% APY</span>
-              <span className="w-auto ">compounding</span>
+              </div>
+              <span className="w-auto d-none d-lg-block">compounding</span>
               <div className="col-lg-2 m-3 m-lg-0">
                 <select
                   className="form-select"
