@@ -36,7 +36,7 @@ const AprToApy = () => {
                   value={period}
                   onChange={(e) => setPeriod(Number(e.target.value))}
                 >
-                  <option value="1">annualy</option>
+                  <option value="1">annually</option>
                   <option value="2">semester</option>
                   <option value="12">monthly</option>
                   <option value="52">weekly</option>
